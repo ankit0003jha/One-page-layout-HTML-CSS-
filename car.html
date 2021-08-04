@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            background-image: url("img/car-4048220_1920.jpg");
+            background-repeat: no-repeat;
+            background-size: 1600px 800px;
+        }
+
+        .left {
+
+            width: 20%;
+            display: inline-block;
+            position: absolute;
+            left: 33px;
+            top: 18px;
+            color: blanchedalmond;
+            cursor: pointer;
+        }
+
+        .left img {
+            width: 200px;
+            margin: -72px 40px;
+            filter: invert();
+
+
+        }
+
+        .mid {
+            display: block;
+            width: 45%;
+            margin: 18px 450px;
+            background-color: rgba(0, 0, 0, 0.4);
+            border-radius: 50px;
+        }
+
+        .right {
+            display: inline-block;
+            position: absolute;
+            right: -40px;
+            top: 35px;
+            width: 22%;
+            list-style: none;
+
+
+        }
+
+        #btn {
+
+            color: white;
+            text-decoration: none;
+            border: 1px solid white;
+            border-radius: 12px;
+            padding: 2px 15px;
+            margin: 0px 2px;
+            background-color: rgba(0, 0, 0, 0.4);
+            font-family: 'Baloo Bhai 2', cursive;
+            font-weight: bold;
+            font-size: 14px;
+            cursor: pointer;
+            color: rgb(255, 255, 255);
+            text-transform: uppercase;
+            position: relative;
+            overflow: hidden;
+
+        }
+
+        span {
+            background-color: rgb(255, 255, 255);
+            height: 100%;
+            width: 0%;
+            border-radius: 12px;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            z-index: -1;
+            transition: 0.5s;
+        }
+
+        button:hover span {
+            width: 100%;
+        }
+
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar li {
+            display: inline-block;
+            list-style: none;
+            margin: 0px 10px;
+            padding: 0px 17px;
+            font-size: 19px;
+            font-weight: bold;
+            font-family: 'Baloo Bhai 2', cursive;
+            text-transform: uppercase;
+
+        }
+
+        #nav {
+
+            color: rgba(253, 252, 253, 0.946);
+            text-decoration: none;
+            padding: 0px 6px;
+
+
+        }
+
+        #nav:hover,
+        #navbar:active {
+            color: rgb(127, 245, 223);
+
+        }
+
+        .mid ul li {
+            position: relative;
+        }
+
+        .mid ul li::after {
+            content: "";
+            height: 4px;
+            width: 0%;
+            background: #009688;
+            position: absolute;
+            left: 0;
+            bottom: -2px;
+            transition: 0.4s;
+
+        }
+
+        .mid ul li:hover::after {
+            width: 100%;
+        }
+
+        #kit {
+            text-align: center;
+            font-size: 22px;
+            font-weight: bold;
+            
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+
+        <div class="left">
+            <img src="img/race-car-309123_1280.png" alt="">
+            <div id="kit">Kitan Motor's</div>
+        </div>
+
+        <div class="mid">
+            <ul class="navbar">
+                <li><a id="nav" class="active" href="#">Home</a></li>
+                <li><a id="nav" href="#">About Us</a></li>
+                <li><a id="nav" href="#">Services</a></li>
+                <li><a id="nav" href="#">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <div class="right">
+            <button id="btn"><span></span> contact us now</button>
+            <button id="btn"><span></span> email Us Now</button>
+        </div>
+
+    </header>
+
+</body>
+
+</html>
